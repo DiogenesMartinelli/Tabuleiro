@@ -1,0 +1,31 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0; /* Cor de fundo da página */
+}
+
+.tabuleiro {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr); /* 8 colunas */
+    width: 400px; /* Largura total do tabuleiro */
+    height: 400px; /* Altura total do tabuleiro */
+}
+
+.linha {
+    display: contents; /* Permite que as células sejam tratadas como parte do grid */
+}
+
+.casa {
+    width: 50px; /* Largura de cada casa */
+    height: 50px; /* Altura de cada casa */
+}
+
+.branca {
+    background-color: #ffffff; /* Cor da casa branca */
+}
+
+.preta {
+    background-color: #000000; /* Cor da casa preta */
+}
